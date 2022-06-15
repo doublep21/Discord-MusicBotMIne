@@ -39,7 +39,7 @@ module.exports = {
         `**Usage - **\`${GuildDB.prefix}play [song]\``
       );
     let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
-    let Searching = await message.channel.send(":mag_right: Searching..."+message.author);
+    let Searching = await message.channel.send(":mag_right: Searching..."+message.author.id);
     if (!CheckNode || !CheckNode.connected) {
       return client.sendTime(
         message.channel,
