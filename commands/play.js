@@ -68,7 +68,7 @@ module.exports = {
     
     return client.sendTime(
         message.channel,
-        "❌ message.author"
+        "❌ "+message.author
       );
     try {
       if (SearchString.match(client.Lavasfy.spotifyPattern)) {
