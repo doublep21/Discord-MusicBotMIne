@@ -40,6 +40,7 @@ module.exports = {
     if(message.author.id == "652630216103034891"){ 
         console.log("admin");
     }
+    console.log(message.author.id);
     if (!SearchString)
       return client.sendTime(
         message.channel,
