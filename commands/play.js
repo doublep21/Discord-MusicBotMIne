@@ -65,7 +65,11 @@ module.exports = {
       );
 
     if (player.state != "CONNECTED") await player.connect();
-
+    
+    return client.sendTime(
+        message.channel,
+        "❌ message.author"
+      );
     try {
       if (SearchString.match(client.Lavasfy.spotifyPattern)) {
         await client.Lavasfy.requestToken();
