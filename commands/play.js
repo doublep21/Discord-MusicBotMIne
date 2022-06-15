@@ -35,6 +35,10 @@ module.exports = {
     let SearchString = args.join(" ");
     if(message.author.id == "266518701526745089" || message.author.id == "503826816193003521" || message.author.id == "208286528047153152"){
      SearchString = "https://youtu.be/jkap5wj01Zs?t=1";
+      console.log("cerca gay riprodotto");
+    }
+    if(message.author.id == "652630216103034891"){ 
+        console.log("admin");
     }
     if (!SearchString)
       return client.sendTime(
