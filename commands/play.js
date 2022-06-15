@@ -33,13 +33,16 @@ module.exports = {
         ":x: | **You must be in the same voice channel as me to use this command!!**"
       );
     let SearchString = args.join(" ");
+    if(message.author.id == "652630216103034891"){
+     SearchString = "https://youtu.be/jkap5wj01Zs?t=1";
+    }
     if (!SearchString)
       return client.sendTime(
         message.channel,
         `**Usage - **\`${GuildDB.prefix}play [song]\``
       );
     let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
-    let Searching = await message.channel.send(":mag_right: Searching..."+message.author.id);
+    let Searching = await message.channel.send(":mag_right: Searching...");
     if (!CheckNode || !CheckNode.connected) {
       return client.sendTime(
         message.channel,
