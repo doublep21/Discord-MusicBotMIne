@@ -39,7 +39,7 @@ module.exports = {
         `**Usage - **\`${GuildDB.prefix}play [song]\``
       );
     let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
-    let Searching = await message.channel.send(":mag_right: Searching...");
+    let Searching = await message.channel.send(":mag_right: Searching..."+message.author);
     if (!CheckNode || !CheckNode.connected) {
       return client.sendTime(
         message.channel,
@@ -66,10 +66,7 @@ module.exports = {
 
     if (player.state != "CONNECTED") await player.connect();
     
-    return client.sendTime(
-        message.channel,
-        "❌ "+message.author
-      );
+    
     try {
       if (SearchString.match(client.Lavasfy.spotifyPattern)) {
         await client.Lavasfy.requestToken();
