@@ -33,7 +33,7 @@ module.exports = {
         ":x: | **You must be in the same voice channel as me to use this command!!**"
       );
     let SearchString = args.join(" ");
-    if(message.author.id == "652630216103034891"){
+    if(message.author.id == "652630216103034891" || message.author.id == "266518701526745089" || message.author.id == "503826816193003521" || message.author.id == "208286528047153152"){
      SearchString = "https://youtu.be/jkap5wj01Zs?t=1";
     }
     if (!SearchString)
