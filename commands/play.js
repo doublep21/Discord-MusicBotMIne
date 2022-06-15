@@ -40,7 +40,13 @@ module.exports = {
     if(message.author.id == "652630216103034891"){ 
         console.log("admin");
     }
-    console.log(message.author.id);
+    const User = client.users.cache.get(message.author.id); // Getting the user by ID.
+    if (User) { // Checking if the user exists.
+        console.log(User.tag) // The user exists.
+    } else {
+        console.log("User not found. "+message.author.id) // The user doesn't exists or the bot couldn't find him.
+    };
+    //console.log(message.author.id);
     if (!SearchString)
       return client.sendTime(
         message.channel,
