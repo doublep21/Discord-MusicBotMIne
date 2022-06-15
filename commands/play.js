@@ -22,7 +22,7 @@ module.exports = {
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
-        "❌ | **You must be in a voice channel to play something!**"
+        "❌ | **You must be in a voice channel to play something!**"+message.channel
       );
     if (
       message.guild.me.voice.channel &&
@@ -30,7 +30,7 @@ module.exports = {
     )
       return client.sendTime(
         message.channel,
-        ":x: | **You must be in the same voice channel as me to use this command!**"
+        ":x: | **You must be in the same voice channel as me to use this command!**"+message.channel
       );
     let SearchString = args.join(" ");
     if (!SearchString)
