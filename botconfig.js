@@ -30,12 +30,12 @@ module.exports = {
   // Lavalink server; public lavalink -> https://lavalink-list.darrennathanael.com/; create one yourself -> https://darrennathanael.com/post/how-to-lavalink
   Lavalink: {
     id: "Main", //- Used for indentifier. You can set this to whatever you want.
-    host: "", //- The host name or IP of the lavalink server.
-    port: 80, // The port that lavalink is listening to. This must be a number!
-    pass: "", //- The password of the lavalink server.
-    secure: false, // Set this to true if the lavalink uses SSL. if not set it to false.
-    retryAmount: 200, //- The amount of times to retry connecting to the node if connection got dropped.
-    retryDelay: 40, //- Delay between reconnect attempts if connection is lost.
+    host: "node1.gglvxd.tk", //- The host name or IP of the lavalink server.
+    port: 443, // The port that lavalink is listening to. This must be a number!
+    pass: "free", //- The password of the lavalink server.
+    secure: true, // Set this to true if the lavalink uses SSL. if not set it to false.
+    retryAmount: 20000, //- The amount of times to retry connecting to the node if connection got dropped.
+    retryDelay: 10, //- Delay between reconnect attempts if connection is lost.
   },
   // Spotify Integration, allows you to enter a spotify link.
   Spotify: {
