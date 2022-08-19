@@ -30,10 +30,10 @@ module.exports = {
   // The default one should work fine, altho if you have issue with it, you can create your own or use another public lavalink.
  Lavalink: {
     id: "Main", //- Used for indentifier. You can set this to whatever you want.
-    host: "node1.gglvxd.tk", //- The host name or IP of the lavalink server.
-    port: 443, // The port that lavalink is listening to. This must be a number!
-    pass: "free", //- The password of the lavalink server.
-    secure: true, // Set this to true if the lavalink uses SSL. if not set it to false.
+    host: process.env.lavalinkhost || "", //- The host name or IP of the lavalink server.
+    port: process.env.lavalinkport || "", // The port that lavalink is listening to. This must be a number!
+    pass: process.env.lavalinkpass || "", //- The password of the lavalink server.
+    secure: process.env.lavalinksecure || "true", // Set this to true if the lavalink uses SSL. if not set it to false.
     retryAmount: 20000, //- The amount of times to retry connecting to the node if connection got dropped.
     retryDelay: 10, //- Delay between reconnect attempts if connection is lost.
   },
