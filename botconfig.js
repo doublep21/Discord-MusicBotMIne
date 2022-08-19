@@ -33,7 +33,7 @@ module.exports = {
     host: process.env.lavalinkhost || "", //- The host name or IP of the lavalink server.
     port: 2333, // The port that lavalink is listening to. This must be a number!
     pass: process.env.lavalinkpass || "", //- The password of the lavalink server.
-    secure: true, // Set this to true if the lavalink uses SSL. if not set it to false.
+    secure: false, // Set this to true if the lavalink uses SSL. if not set it to false.
     retryAmount: 20000, //- The amount of times to retry connecting to the node if connection got dropped.
     retryDelay: 10, //- Delay between reconnect attempts if connection is lost.
   },
